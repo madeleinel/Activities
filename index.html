@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Activities</title>
+    <!-- Set up basic properties of the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link to the relevant stylesheets -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Activities</h1>
+    </header>
+
+    <main>
+      <section id="input" class="row">
+        <form action="">
+          <h2>New Activity:</h2>
+          <textarea id="activity_name" rows="1" cols="20" placeholder="Name of activity"></textarea>
+          <textarea id="activity_time" rows="1" cols="8" placeholder="Time required"></textarea>
+          <textarea id="activity_category" rows="1" cols="20" placeholder="Category"></textarea>
+          <button id="save_input">Save Activity</button>
+        </form>
+
+      </section>
+      <section id="output" class="row">  <!-- Temporary storage of activities >> to set up database using PostgreSQL -->
+
+      </section>
+      <section id="output_filtered" class="row">
+
+      </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

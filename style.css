@@ -1,0 +1,38 @@
+p {
+  display: block;
+  border: 1px solid black;
+}
+
+  main {
+  /* margin-top: 4em;    /* To ensure that the main section starts displaying under the navbar */
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.row {
+  width: 80vw;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.column {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+}
