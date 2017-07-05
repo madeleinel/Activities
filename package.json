@@ -1,0 +1,22 @@
+{
+  "name": "activities",
+  "version": "1.0.0",
+  "description": "Website containing activity ideas, and options to filter through them.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madeleinel/activities.git"
+  },
+  "author": "Madeleine Linder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madeleinel/activities/issues"
+  },
+  "homepage": "https://github.com/madeleinel/activities#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
