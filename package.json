@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/madeleinel/activities#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "pg": "^6.4.0"
   }
 }
