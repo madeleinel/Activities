@@ -7,12 +7,21 @@ var pg = require('pg'),
 // A connection/communication with the database is established for the client using connect()
 client.connect();
 
-var query = client.query (
+////////////////////////////////////////////////////////////////////////////////////////////////
+//////// Below function; only need to run once (as only need to create the table once) ////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+// var query = client.query (
   // For each activity being saved into the database, provide:
   // - The item id (automatically increasing integer)
   // - A name of min 1 and max 20 characters
   // - A time estimation of 1-8 characters, and
   // - A category nomination of 1-10 characters
-  'CREATE TABLE activity_options(id SERIAL PRIMARY KEY, name VARCHAR(20) not null, time VARCHAR(8) not null, category VARCHAR(10) not null)');
+  // 'CREATE TABLE activity_options(id SERIAL PRIMARY KEY, name VARCHAR(20) not null, time VARCHAR(8) not null, category VARCHAR(10) not null)');
 // The connection between the database and the client is closed via end()
-query.on('end', () => { client.end(); });
+// query.on('end', () => { client.end(); });
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Add data to the table
+
+// Retrieve data from the table
