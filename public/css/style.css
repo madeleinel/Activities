@@ -1,18 +1,37 @@
-p {
-  display: block;
-  border: 1px solid black;
+body {
+  font-family: Verdana, sans-serif;
 }
 
-  main {
+h1 {
+  font-family: 'Zilla Slab', serif;
+  color: white;
+  font-size: 4em;
+  text-shadow: 2px 2px 4px #444;
+}
+
+h2 {
+  font-family: 'Zilla Slab', serif;
+  font-size: 2em;
+  text-align: center;
+  min-height: 4vh;
+  padding-bottom: 1rem;
+  margin: 4rem 0 2rem 0;
+  border-bottom: 2px solid cadetBlue;
+}
+
+p {
+  margin: 1em;
+  background: yellow;
+}
+
+header {
+  background: cadetBlue;
+  min-height: 16vh;
+  justify-content: center;
+}
+
+main {
   /* margin-top: 4em;    /* To ensure that the main section starts displaying under the navbar */
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-align-items: center;
-  align-items: center;
 }
 
 .row {
@@ -35,4 +54,39 @@ p {
   flex-direction: column;
   -ms-align-items: center;
   align-items: center;
+}
+
+section.column, form {
+  width: 80vw;
+  text-align: center;
+}
+
+input[type=text], input[list] {
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 0.25em;
+  border: 2px solid #555;
+}
+
+input[type=text]:focus {
+
+  outline-color: purple;
+}
+
+button {
+  border-radius: 0.25em;
+  color: #fff;
+  background-color: cadetBlue;
+  padding: 0.5em;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+#output_section {
+  margin-bottom: 16vh;
 }

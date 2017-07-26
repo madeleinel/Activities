@@ -11,29 +11,59 @@
     <!-- Link to the relevant stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellefair|Lato|Slabo+27px|Zilla+Slab" rel="stylesheet">
   </head>
 
   <body>
-    <header>
+    <header class="column">
       <h1>Activities</h1>
     </header>
 
-    <main>
-      <section id="input" class="row">
+    <main class="column">
+
+      <section id="input" class="column">
         <form action="">
           <h2>New Activity:</h2>
-          <textarea id="activity_name" rows="1" cols="20" placeholder="Name of activity"></textarea>
-          <textarea id="activity_time" rows="1" cols="8" placeholder="Time required"></textarea>
-          <textarea id="activity_category" rows="1" cols="20" placeholder="Category"></textarea>
+          <input type="text" id="activity_name" placeholder="Name of activity">
+          <input type="text" id="activity_time" placeholder="Time required">
+          <input type="text" id="activity_location" placeholder="Inside / Outside">
+          <input type="text" id="activity_social" placeholder="Social / Independent">
+          </br>
           <button id="save_input">Save Activity</button>
         </form>
 
       </section>
-      <section id="output" class="row">  <!-- Temporary storage of activities >> to set up database using PostgreSQL -->
 
+      <section id="output_filter" class="column">
+        <form action="">
+          <h2>Choose what kind of activity you want to do:</h2>
+          <input list="time_criteria" placeholder="Time to spend on the activity">
+            <datalist id="time_criteria">
+              <option value="Up to 5 minutes"></option>
+              <option value="5 to 15 minutes"></option>
+              <option value="15 to 30 minutes"></option>
+              <option value="30 minutes to 1 hour"></option>
+            </datalist>
+            <input list="location_criteria" placeholder="Whether to be inside or outside">
+              <datalist id="location_criteria">
+                <option value="Inside"></option>
+                <option value="Outside"></option>
+              </datalist>
+          <input list="social_criteria" placeholder="Whether do something social or independent">
+            <datalist id="social_criteria">
+              <option value="Social"></option>
+              <option value="Independent"></option>
+            </datalist>
+          </br>
+          <button id="save_input">Find Activities</button>
+        </form>
       </section>
-      <section id="output_filtered" class="row">
 
+      <section id="output_section" class="column">
+        <h2>Activities to choose from:</h2>
+        <section id="output">
+          <p>Activities to be displayed here...</p>
+        </section>
       </section>
 
     </main>
